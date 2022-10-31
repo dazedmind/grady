@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="heading-title">
+            <h1>Grade Calculator</h1>
+            <div class="coursenum-selector">
+                <p>Select number of course:</p>
+                <div class="selector-buttons">
+                    <input type="number" id="course-num" min="1" value="6">
+                    <button id="course-num-btn" onclick="setNum()">Add Course</button>
+                    <button id="rm-course-btn" onclick="removeNum()">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div id="another-list">
+            <ul id="course-list">
+                <li>
+                    <p>Course 1</p><input type="number" class="grade-input" value="0" min="0" data-grade> 
+                </li>
+                <li>
+                    <p>Course 2</p><input type="number" class="grade-input" value="0" min="0" data-grade> 
+                </li>
+                <li>
+                    <p>Course 3</p><input type="number" class="grade-input" value="0" min="0" data-grade> 
+                </li>
+                <li>
+                    <p>Course 4</p><input type="number" class="grade-input" value="0" min="0" data-grade> 
+                </li>
+                <li>
+                    <p>Course 5</p><input type="number" class="grade-input" value="0" min="0" data-grade> 
+                </li>
+                <li>
+                    <p>Course 6</p><input type="number" class="grade-input" value="0" min="0" data-grade> 
+                </li>
+            </ul>
+        </div>
+        <div class="btn-container">
+            <button id="average-btn" onclick="calcAve()">Calculate Average</button>
+        </div>
+        <div>
+            <p id="finalgrade"></p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-contents">
+            <i class="fa-brands fa-github fa-2xl"></i>
+            <p class="footer-text">
+                Follow me on GitHub: <a class="link-github" href="https://github.com/dazedmind" target="_blank">dazedmind</a>
+            </p>
+        </div>
+    </footer>
+    <script src="/public/app.js"></script>
+</body>
+</html>
+
+<!-- TO DO -->
+<!-- 1. CREATE DARK MODE -->
+<!-- 2. POLISH UI/UX -->

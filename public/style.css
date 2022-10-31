@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html { font-family: "Nunito Sans", sans-serif;}
+body {
+    font-family:'Nunito Sans', sans-serif;
+    height: 100vh;
+}
+
+main {
+    width: 30vw;
+    height: auto;
+    background-color: #e7e7e7;
+    
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 45px;
+    padding: 1rem;
+}
+
+.heading-title {
+    padding: 1rem;
+    text-align: center;
+    /* background-color: #749F82; */
+    background-color: #2B4865;
+    border-radius: 20px 20px 0px 0px;
+    border-width: 2px;
+    color: #d0d0d0;
+}
+
+button {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+#course-list {
+    margin-top: 2rem;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+#average-btn {
+    padding: .7rem 1rem;
+    margin-top: 1rem;
+    /* background-color: #749F82; */
+    background-color: #256D85;
+    border-width: 0;
+    border-radius: 6px;
+    color: #fafafa;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+#average-btn:hover{
+    background-color: #2B4865;
+}
+
+#average-btn:disabled {
+    background-color: #d0d0d0;
+    cursor: not-allowed;
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    margin: 0.5em;
+}
+
+.coursenum-selector {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+.grade-input, #course-num {
+    width: 4rem;
+    border-radius: 7px;
+    border-width: 2px;
+    border-style: solid;
+    padding: .4rem .2rem
+}
+
+#course-num {
+    border-width: 0;
+    outline: none;
+}
+
+/* #course-num {
+    width: 3rem;
+} */
+
+#course-num-btn, #rm-course-btn {
+    padding: .4rem .6rem;
+    border-radius: 6px;
+    border-width: 0;
+    /* background-color: #547760; */
+    background-color: #0f2841;
+    cursor: pointer;
+    color: #d0d0d0;
+}
+
+#finalgrade {
+    margin-top: 1rem;
+    /* color: rgb(21, 75, 21); */
+    color: #256D85;
+    font-weight: bold;
+    /* background-color: rgb(224, 240, 193); */
+    background-color: #d0d0d0;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer-contents {
+    margin: 1em;
+}
+
+.footer-text {
+    margin-top: 1rem;
+}
+
+.link-github {
+    text-decoration: none;
+    color: #2B4865;
+    font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 320px) {
+    main {
+        width: 90vw;
+        top: 1rem;
+    }
+    
+    h1 {
+        font-size: 38px;
+        padding: 0rem;
+    }
+    .coursenum-selector {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    main {
+        width: 70vw;
+        top: 4rem;
+    }
+
+    .coursenum-selector {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        width: 50vw;
+    }
+
+    .coursenum-selector {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        width: 40vw;
+        top: 6rem;
+    }
+
+    .coursenum-selector {
+        flex-direction: row;
+    }
+    .selector-buttons {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    main {
+        width: 40vw;
+        margin-top: 9rem;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p, button {
+        font-size: 26px;
+    }
+
+    #course-num {
+        font-size: 26px;
+    }
+}
