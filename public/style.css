@@ -8,10 +8,9 @@
 html { font-family: "Nunito Sans", sans-serif;}
 body {
     font-family:'Nunito Sans', sans-serif;
-    height: 100vh;
 }
 
-main {
+/* main {
     width: 30vw;
     height: auto;
     background-color: #e7e7e7;
@@ -23,7 +22,7 @@ main {
 
     margin: auto;
     border-radius: 20px;
-}
+} */
 
 h1 {
     font-size: 45px;
@@ -126,11 +125,35 @@ li {
     border-radius: 12px;
 }
 
-footer {
+.divider {
+    height: 20vh;
+}
+
+.footer-note {
+    margin: 0rem 2rem;
+    text-align: center;
+    color: #818181;
+    font-style: italic;
+}
+
+/* footer {
     width: 100vw;
     height: 10vh;
     position: absolute;
     bottom: 0;
+    text-align: center;
+} */
+
+main {
+    height: auto;
+    margin: 10rem auto;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+footer {
+    height: 10vh;
     text-align: center;
 }
 
@@ -153,7 +176,8 @@ footer {
 @media screen and (min-width: 320px) {
     main {
         width: 90vw;
-        top: 1rem;
+        margin-top: 6rem;
+        margin-bottom: 3rem;
     }
     
     h1 {
